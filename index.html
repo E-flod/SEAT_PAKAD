@@ -1,39 +1,172 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Seat Pakad – Train Ticket Booking</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Seat Pakad – Train Ticket Booking Assistance</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f9fc;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e88e5, #1565c0);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: auto;
+      opacity: 0.95;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #1e88e5;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+      line-height: 1.7;
+    }
+
+    .download-btn {
+      display: inline-block;
+      background: #1e88e5;
+      color: white;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      margin-top: 20px;
+      transition: background 0.2s ease;
+    }
+
+    .download-btn:hover {
+      background: #1565c0;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #1565c0;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 15px;
+      background: #eef2f7;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    footer strong {
+      color: #333;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Seat Pakad</h1>
 
-  <p>
-    Seat Pakad is a platform where users can request train ticket bookings.
-    Our ultra pro max booking agent books the ticket at the right time as per
-    the user’s request.
-  </p>
+  <header>
+    <h1>Seat Pakad</h1>
+    <p>
+      Train ticket booking assistance platform.
+      Our ultra pro max agent helps book tickets at the right time.
+    </p>
+    <span class="badge">Free • Beta Version</span>
+  </header>
 
-  <h3>How it works</h3>
-  <ul>
-    <li>User submits ticket booking request</li>
-    <li>Our agent monitors seat availability</li>
-    <li>Ticket is booked at the right time</li>
-  </ul>
+  <div class="container">
 
-  <h3>Download</h3>
-  <a href="APK_DOWNLOAD_LINK_HERE">
-    Download Seat Pakad APK (v1.0 Beta)
-  </a>
+    <div class="card">
+      <h2>What is Seat Pakad?</h2>
+      <p>
+        Seat Pakad is a platform where users can request train ticket bookings.
+        Instead of constantly checking availability, our experienced booking
+        agent monitors seats and books the ticket at the right time as per
+        the user’s request.
+      </p>
+    </div>
 
-  <p>
-    ✅ Free to use (for now)<br>
-    ⚠️ Beta version – features may change
-  </p>
+    <div class="card">
+      <h2>How It Works</h2>
+      <ul>
+        <li>User submits a train ticket booking request</li>
+        <li>Our agent continuously monitors seat availability</li>
+        <li>Ticket is booked at the right time</li>
+        <li>User receives booking confirmation</li>
+      </ul>
+    </div>
 
-  <p>
-    <strong>Disclaimer:</strong><br>
-    Seat Pakad is not affiliated with IRCTC or Indian Railways.
-    Ticket booking is handled by independent agents.
-  </p>
+    <div class="card">
+      <h2>Download the App</h2>
+      <p>
+        Seat Pakad is currently available as an Android APK.
+      </p>
+
+      <a class="download-btn" href="APK_DOWNLOAD_LINK_HERE">
+        Download Seat Pakad APK (v1.0 Beta)
+      </a>
+
+      <p style="margin-top:15px; font-size:0.9rem;">
+        ⚠️ Enable <strong>“Install unknown apps”</strong> on your device.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Important Notice</h2>
+      <p>
+        <strong>Disclaimer:</strong><br>
+        Seat Pakad is not affiliated with IRCTC or Indian Railways.
+        Ticket booking is handled by independent agents.
+      </p>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>
+      © 2025 <strong>Seat Pakad</strong><br>
+      Free beta service • Features may change
+    </p>
+  </footer>
+
 </body>
 </html>
